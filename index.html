@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Liquid</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">RxA</div>
+            <ul class="nav__list">
+                <li class="list__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="list__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="list__item"><a href="#contact" class="nav__link">Contact</a></li>
+                <li class="list__item"><a href="#" class="nav__link">Admin</a></li>
+            </ul>
+            <div class="ham">
+                <div class="ham__btn"><i class="fa fa-navicon"></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="home" id="home">
+            <h1>
+                <div>Home</div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </h1>
+
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero fugiat accusantium ipsa vero exercitationem
+            rerum illum quia quasi? Ex voluptatibus molestiae eos unde earum dolor voluptates iure nesciunt similique
+            corrupti.
+        </div>
+
+        <div class="about" id="about">
+            <h1>
+                <div>About</div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </h1>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sunt praesentium iste esse quibusdam non
+            maxime ut similique, officia iusto omnis. Magni recusandae exercitationem asperiores perferendis aut, quos
+            reprehenderit eligendi!
+        </div>
+
+        <div class="contact" id="contact">
+            <h1>
+                <div>Contact</div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </h1>
+            <div class="contact__icons">
+                <div><a class="git" href="#"><i class="fa fa-github"></i></a></div>
+                <div><a class="mail" href="#"><i class="fa fa-envelope"></i></a></i></div>
+                <div><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></div>
+                <div><a class="insta" href="#"><i class="fa fa-instagram"></i></a></i></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let ham = document.querySelector('.ham');
+        ham.addEventListener('click', () => {
+            let menu = document.querySelector('.nav__list');
+            menu.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>
